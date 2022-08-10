@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+.conatiner{
+	margin: 0px auto;
+	width: 70%
+}
+
+.header{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.subheader{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.form{
+	display:flex;
+	justify-content: center;
+}
+
+.errors{
+	color: red;
+}
