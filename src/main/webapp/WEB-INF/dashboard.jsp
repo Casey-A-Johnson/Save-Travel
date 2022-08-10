@@ -32,7 +32,7 @@
 				<tbody>
 					<c:forEach var = "expense" items = "${travelList}">
 						<tr>
-							<td><c:out value="${expense.name }"/></td>
+							<td><a href="/travel/${expense.id }"><c:out value="${expense.name }"/></a></td>
 							<td><c:out value="${expense.vendor }"/></td>
 							<td>$<c:out value="${expense.amount }"/></td>
 							<td style="display: flex; gap: 10px;">

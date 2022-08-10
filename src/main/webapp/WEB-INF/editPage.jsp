@@ -16,10 +16,11 @@
 </head>
 <body>
 	<div class = "container">
-		<div class="header">
+		<div class="header" style="display: flex; justify-content: space-between; align-items: center;">
 			<h1>Edit Expense</h1>
+			<a class="btn btn-primary" href="/travel">Go Back</a>
 		</div>
-		<div>
+		<div style="margin-top: 20px;">
 			<form:form action = "/process/edit/${expense.id}" method= "post" modelAttribute ="travelExpense" >
 				<input type= "hidden" name="_method" value = "put"/>
 				<div class= "mb-3">
@@ -51,7 +52,7 @@
 						<form:errors class="errors" path = "description"/>
 					</div>
 				</div>
-				<div class= "button">
+				<div>
 					<button class="btn btn-primary" type= "submit">Submit</button>
 				</div>
 			</form:form>

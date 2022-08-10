@@ -51,6 +51,14 @@ public class HomeController {
 		}
 	}
 	
+	//-----Get One------
+	@RequestMapping("travel/{id}")
+	public String oneTravelExpense(@PathVariable("id")Long id,Model model) {
+		Travel foundTravelExpense = travelService.oneTravelExpense(id);
+		model.addAttribute("oneTravelExpense",foundTravelExpense);
+		return "details.jsp";
+	}
+	
 	//---------Edit---------
 	@RequestMapping("/travel/edit/{id}")
 	public String renderEditPage(@PathVariable("id")Long id, Model model) {
