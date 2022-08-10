@@ -32,7 +32,7 @@
 		</div>
 		<div style="display:flex; gap: 20px;">
 			<h3>Amount Spent:</h3>
-			<h3><c:out value="${oneTravelExpense.amount }"></c:out></h3>
+			<h3>$<c:out value="${oneTravelExpense.amount }"></c:out></h3>
 		</div>
 	</div>
 </body>

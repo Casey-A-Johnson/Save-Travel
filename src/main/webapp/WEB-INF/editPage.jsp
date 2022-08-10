@@ -21,7 +21,7 @@
 			<a class="btn btn-primary" href="/travel">Go Back</a>
 		</div>
 		<div style="margin-top: 20px;">
-			<form:form action = "/process/edit/${expense.id}" method= "post" modelAttribute ="travelExpense" >
+			<form:form action = "/process/edit/${travelExpense.id}" method= "post" modelAttribute ="travelExpense" >
 				<input type= "hidden" name="_method" value = "put"/>
 				<div class= "mb-3">
 					<form:label class="form-label" path="name">Expense</form:label>
