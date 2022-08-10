@@ -35,6 +35,13 @@
 							<td><c:out value="${expense.name }"/></td>
 							<td><c:out value="${expense.vendor }"/></td>
 							<td>$<c:out value="${expense.amount }"/></td>
+							<td style="display: flex; gap: 10px;">
+							 <a class = "btn btn-outline-warning" href= "/travel/edit/${expense.id}">Edit</a>
+							 <form action = "/travel/delete/${expense.id }" method = "post">
+								<input type= "hidden" name= "_method" value="delete"/>
+								<button class="btn btn-outline-danger" type= "submit">Delete</button>
+							 </form>
+							</td>
 						</tr>
 					</c:forEach>
 				</tbody>
